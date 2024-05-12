@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño de Cajas</title>
+    <style>
+        .caja {
+            margin: 20px; /* Margen exterior */
+            padding: 20px; /* Relleno interno */
+            border: 2px solid #333; /* Borde sólido */
+        }
+
+        .caja1 {
+            width: 200px; /* Ancho absoluto */
+            height: 100px; /* Alto absoluto */
+        }
+
+        .caja2 {
+            width: 50%; /* Ancho relativo */
+            height: 150px; /* Alto absoluto */
+        }
+
+        .caja3 {
+            width: 300px; /* Ancho absoluto */
+            height: 200px; /* Alto absoluto */
+            border-radius: 10px; /* Borde redondeado */
+        }
+
+        .caja4 {
+            width: 75%; /* Ancho relativo */
+            height: 250px; /* Alto absoluto */
+            padding: 30px; /* Relleno interno */
+            margin-top: 40px; /* Margen superior */
+            border: 5px dashed #ff6600; /* Borde discontinuo y color naranja */
+        }
+    </style>
+</head>
+<body>
+    <div class="caja caja1">Caja 1 (200x100)</div>
+    <div class="caja caja2">Caja 2 (50% x 150px)</div>
+    <div class="caja caja3">Caja 3 (300x200 con bordes redondeados)</div>
+    <div class="caja caja4">Caja 4 (75% x 250px con margen superior)</div>
+</body>
+</html>

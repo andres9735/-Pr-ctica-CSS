@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Navegación</title>
+    <style>
+        
+        ul {
+            list-style-type: none; 
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block; 
+            margin-right: 20px; 
+        }
+
+        li a {
+            text-decoration: none; 
+            color: #333; 
+            padding: 10px; 
+            transition: background-color 0.3s; 
+        }
+
+        li a:hover {
+            background-color: #f0f0f0; 
+        }
+
+        .vertical-menu {
+            width: 200px; 
+        }
+
+        .vertical-menu li {
+            display: block; 
+            margin: 10px 0; 
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Sobre Nosotros</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+
+    <br>
+
+    <ul class="vertical-menu">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Sobre Nosotros</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+</body>
+</html>

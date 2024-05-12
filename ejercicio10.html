@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores Avanzados en CSS</title>
+    <style>
+        /* Estilos para todos los elementos <p> dentro de un contenedor con la clase "container" */
+        .container p {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos para todos los elementos <a> dentro de un contenedor con la clase "container" */
+        .container a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        /* Estilos para los elementos <span> que son hijos directos de un elemento con la clase "container" */
+        .container > span {
+            font-weight: bold;
+        }
+
+        /* Estilos para los elementos <li> que son hijos directos de un elemento <ul> con la clase "list" */
+        ul.list > li {
+            list-style-type: none;
+            border-bottom: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        /* Estilos para los elementos <li> que son hijos directos del segundo elemento <ul> */
+        ul:nth-child(2) > li {
+            background-color: #f0f0f0;
+        }
+
+        /* Estilos para los elementos <input> con el atributo "type" igual a "text" */
+        input[type="text"] {
+            width: 200px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum a fuga iusto reiciendis porro? Assumenda porro 
+           consequuntur iste inventore provident accusantium, quia ipsum repudiandae nulla ratione eaque ab sapiente eveniet?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit minus incidunt, ut praesentium asperiores velit ad esse repellendus aliquid odio, 
+           nemo repudiandae assumenda nobis sint iusto nostrum aut deserunt pariatur!<span>con un span dentro</span></p>
+        <a href="#">Enlace dentro del contenedor</a>
+    </div>
+
+    <ul class="list">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+
+    <ul>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+        <li>Elemento 6</li>
+    </ul>
+
+    <input type="text" placeholder="Campo de texto">
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efectos de Hover</title>
+    <style>
+        /* Estilos base para los elementos */
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            line-height: 200px;
+            margin: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s, background-color 0.3s;
+            cursor: pointer;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Efecto de hover */
+        .box:hover {
+            background-color: #0056b3;
+            transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Aumenta la sombra */
+        }
+
+        /* Estilos para el enlace */
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        /* Efecto de hover para el enlace */
+        a:hover {
+            color: #0056b3; /* Cambia el color al pasar el cursor */
+        }
+
+        /* Estilos para la imagen */
+        .image {
+            width: 200px;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        /* Efecto de hover para la imagen */
+        .image:hover {
+            transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Caja con efecto de hover</div>
+
+    <a href="#" class="link">Enlace con efecto de hover</a>
+
+    <img src="imagenes/ardilla.jpg" alt="Imagen con efecto de hover" class="image">
+</body>
+</html>

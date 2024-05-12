@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Botones Personalizados</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .default {
+            background-color: #007bff;
+            color: #0056b3;
+        }
+
+        .default:hover {
+            background-color: #0056b3;
+        }
+
+        .secondary {
+            background-color: #6c757d;
+            color: #fff;
+        }
+
+        .secondary:hover {
+            background-color: #545b62;
+        }
+    </style>
+</head>
+<body>
+    <button class="button default">Aceptar</button>
+    <a href="#" class="button default">Cancelar</a>
+    <br><br>
+    <button class="button secondary">Editar</button>
+    <a href="#" class="button secondary">Eliminar</a>
+</body>
+</html>
